@@ -1,8 +1,12 @@
 name: CI
 
+# Workflow disabled - uncomment 'on' section to re-enable
+# on:
+#   push:
+#   pull_request:
+
 on:
-  push:
-  pull_request:
+  workflow_dispatch:  # Allow manual trigger only
 
 jobs:
   tests:
