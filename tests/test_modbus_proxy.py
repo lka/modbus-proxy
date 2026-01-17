@@ -23,9 +23,7 @@ from modbus_proxy import parse_url, parse_args, load_config, run
 from .conftest import REQ, REP, REQ2, REP2, REQ3_ORIGINAL, REP3_MODIFIED
 
 
-Args = namedtuple(
-    "Args", "config_file bind modbus modbus_connection_time timeout"
-)
+Args = namedtuple("Args", "config_file bind modbus modbus_connection_time timeout")
 
 
 CFG_YAML_TEXT = """\

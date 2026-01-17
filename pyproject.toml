@@ -10,6 +10,8 @@ addopts = [
     "--durations=2", "--verbose"
 ]
 testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_default_fixture_loop_scope = "function"
 
 [tool.black]
 # just signal the project uses black for editors like emacs python-black
